@@ -3,6 +3,7 @@
 	<title>Team Monsters Hackathon App</title>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="scripts/mapEngine.js"></script>
 </head>
 <body>
   <div id="gpsReadout">
@@ -13,21 +14,5 @@
   		Longitude: <span id="lng"></span>
   	</div>
   </div>
-  <script type="text/javascript">
-  	$(document).ready(function() {
-  		navigator.geolocation.getCurrentPosition(geoSuccess, geoError, {maximumAge: 20000, timeout: 10000, enableHighAccuracy: true});
-  	});
-
-  	var geoSuccess = function (position) {
-  		console.log(position.coords.latitude,position.coords.longitude);
-  		$('#lat').append(position.coords.latitude);
-  		$('#lng').append(position.coords.longitude);
-  	}
-
-  	var geoError = function (position) {
-  		console.log('geolocation error');
-  	}
-  	
-  </script> 
 </body>
 </html>
