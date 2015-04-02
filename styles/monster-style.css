@@ -6,14 +6,16 @@
 	height: 50px;
 }
 
-.navbar-nav a {
-	color: #777;
-	border-left: 1px solid #aaa;
-	border-right: 1px solid #aaa;
+@media (min-width: 768px) {
+	.navbar-nav a {
+		color: #777;
+		border-left: 1px solid #aaa;
+		border-right: 1px solid #aaa;
+	}
 }
 
 .monsters-tagline {
-    padding: 5px 10px 0 5px;
+    padding: 5px 15px 0 15px;
     float: left;
     font-size: 14px;
     font-weight: bold;
@@ -21,4 +23,14 @@
 
 .monsters-bodywrap {
 	margin: 20px;
+}
+
+.monster-main-menu li {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.monster-main-menu li:hover {
+	background-color: #aaa;
+	color: #fff;
 }
