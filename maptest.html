@@ -87,7 +87,13 @@
                             ]
                         },
                         {
-                            "featureType": "landscape",
+                          "featureType": "landscape.man_made",
+                          "stylers": [
+                            { "visibility": "on" }
+                          ]
+                        },
+                        {
+                            "featureType": "landscape.natural",
                             "elementType": "all",
                             "stylers": [
                                 {
@@ -106,9 +112,16 @@
                             "elementType": "all",
                             "stylers": [
                                 {
-                                    "visibility": "off"
+                                    "visibility": "on"
                                 }
                             ]
+                        },
+                        {
+                          featureType: "poi.business",
+                          elementType: "all",
+                          stylers: [
+                            { visibility: "on" }
+                          ]
                         },
                         {
                             "featureType": "road",
@@ -118,7 +131,7 @@
                                     "color": "#0096aa"
                                 },
                                 {
-                                    "visibility": "simplified"
+                                    "visibility": "on"
                                 },
                                 {
                                     "saturation": "-75"
@@ -181,7 +194,7 @@
                             "elementType": "labels.icon",
                             "stylers": [
                                 {
-                                    "visibility": "off"
+                                    "visibility": "on"
                                 }
                             ]
                         },
@@ -190,7 +203,7 @@
                             "elementType": "all",
                             "stylers": [
                                 {
-                                    "visibility": "simplified"
+                                    "visibility": "on"
                                 },
                                 {
                                     "color": "#0096aa"
@@ -232,7 +245,7 @@
                             "elementType": "labels.text",
                             "stylers": [
                                 {
-                                    "visibility": "simplified"
+                                    "visibility": "on"
                                 },
                                 {
                                     "color": "#ffe146"
@@ -250,7 +263,7 @@
                             "elementType": "labels.icon",
                             "stylers": [
                                 {
-                                    "visibility": "off"
+                                    "visibility": "on"
                                 }
                             ]
                         }
@@ -258,7 +271,7 @@
 
       var mapOpts = {
         center: new google.maps.LatLng(39.886454,-75.1829578),
-        zoom: 5,
+        zoom: 9,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles: mapStyles
       };
