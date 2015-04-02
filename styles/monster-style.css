@@ -1,0 +1,24 @@
+.navbar-brand {
+	padding: 0;
+}
+
+.app-logo {
+	height: 50px;
+}
+
+.navbar-nav a {
+	color: #777;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+}
+
+.monsters-tagline {
+    padding: 5px 10px 0 5px;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.monsters-bodywrap {
+	margin: 20px;
+}

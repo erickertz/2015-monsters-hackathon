@@ -3,9 +3,18 @@
 	<title>Team Monsters Hackathon App</title>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="scripts/mapEngine.js"></script>
 </head>
 <body>
-  <div id="map" style="height:600px;width:100%;border: 1px solid black">
+  <div id="gpsReadout">
+    <div>
+      Latitude: <span id="lat"></span>
+    </div>
+    <div>
+      Longitude: <span id="lng"></span>
+    </div>
+  </div>
+  <div id="map" style="height:500px;width:100%;border: 1px solid black">
   </div>
 
   <script type="text/javascript">
