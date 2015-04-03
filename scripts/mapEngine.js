@@ -3,6 +3,9 @@ var markerData = [];
 var drawnMarkers = [];
 var lastSelectedMenu = -1;
 var monsterMap;
+var startLat;
+var startLong;
+
 
 var autoGeolocation = function() {
   navigator.geolocation.getCurrentPosition(geoSuccess, geoError, {maximumAge: 20000, timeout: 10000, enableHighAccuracy: true});
@@ -12,6 +15,8 @@ var autoGeolocation = function() {
 var geoSuccess = function (position) {
   $('#lat').append(position.coords.latitude);
 	$('#lng').append(position.coords.longitude);
+  startLat = 39.8885523;
+  startLong = -75.1763572;
 
   updateMap(39.8885523,-75.1763572);
 }
@@ -72,7 +77,9 @@ var drawMarker = function(markerDataIndex, buildingData) {
 
   var currentData = null;
 
-  if(markerDataIndex) {
+  console.log(markerDataIndex, buildingData);
+
+  if(markerDataIndex !== null) {
     currentData = markerData[markerDataIndex];
   } else if(buildingData) {
     currentData = buildingData;
@@ -82,7 +89,7 @@ var drawMarker = function(markerDataIndex, buildingData) {
   $.each(drawnMarkers, function(index, element) {
     drawnMarkers[index].setMap(null);
   })
-  console.log(currentData);
+
   var currentPositionMarker = new google.maps.Marker({
       map: monsterMap,
       animation: google.maps.Animation.BOUNCE,
@@ -100,8 +107,19 @@ var drawMarker = function(markerDataIndex, buildingData) {
 
   drawnMarkers.push(currentPositionMarker);
 
+  var infoContent = currentData.locationimage ? "<b>" + currentData.name + "</b>" +
+              "<div class='monsters-info-image' style='background-image: url(" + currentData.locationimage + ")'></div>" :
+              currentData.description ? 
+              "<b>" + currentData.name + "</b>" + 
+              "<div class='monsters-info-description'>" + currentData.description + "</div>" : 
+              "<b>" + currentData.name + "</b>";
+
+
+
+  infoContent = infoContent + "<div class='monsters-directions'><a target='_blank' href='http://maps.google.com/maps?saddr=" + startLat + "," + startLong + "&daddr=" + currentData.lat + "," + currentData.long + "'>Get Directions</a></div>"
+
   var infowindow = new google.maps.InfoWindow({
-    content: "<b>" + currentData.name + "</b>"
+    content: infoContent
   });
 
   google.maps.event.addListener(currentPositionMarker, 'click', function() {
@@ -155,8 +173,6 @@ var updateMap = function(lat, lng) {
       title: "You are here!",
       icon: "/app/images/locator-marker.png"
   });
-
-  infowindow.open(monsterMap,currentPositionMarker);
 
   google.maps.event.addListener(currentPositionMarker, 'click', function() {
     infowindow.open(monsterMap,currentPositionMarker);

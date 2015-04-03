@@ -56,7 +56,8 @@
 	font-weight: bold;
 }
 
-.monsters-building-image {
+.monsters-building-image,
+.monsters-info-image {
 	width: 100%;
 	height: 250px;
 	background-repeat: no-repeat;
@@ -67,4 +68,13 @@
 
 .monsters-description {
 	margin: 10px 0;
+}
+
+.monsters-info-description {
+	width: 200px;
+}
+
+.monsters-info-image{
+	width: 200px;
+	height: 200px;
 }
