@@ -1,5 +1,5 @@
 var authorization = "Basic bmVvNGo6bW9uc3RlcnM=";
-var building = "B3";
+var building = "Building543";
 
 $.getBuilding = function getBuilding(building) {
 	var defer = $.Deferred();
@@ -27,7 +27,7 @@ $.getBuilding = function getBuilding(building) {
 $.getBuildingCoordinates = function getBuildingCoordinates(building) {
 	var defer = $.Deferred();
 	var url = "http://localhost:7474/db/data/transaction/commit";
-	var data = {"statements":[{"statement":"MATCH (n:Coordinates { building_name:'"+building+"' }) RETURN n;"}]};
+	var data = {"statements":[{"statement":"MATCH (n:Coordinate { building:'"+building+"' }) RETURN n;"}]};
 	$.ajax({
 		method: "POST",
 		url: url,
@@ -50,7 +50,7 @@ $.getBuildingCoordinates = function getBuildingCoordinates(building) {
 $.getBuildingInteriorMarkers = function getBuildingInteriorMarkers(building) {
 	var defer = $.Deferred();
 	var url = "http://localhost:7474/db/data/transaction/commit";
-	var data = {"statements":[{"statement":"MATCH (n:InteriorMarker { building_name:'"+building+"' }) RETURN n;"}]};
+	var data = {"statements":[{"statement":"MATCH (n:InteriorMarker { building:'"+building+"' }) RETURN n;"}]};
 	$.ajax({
 		method: "POST",
 		url: url,
