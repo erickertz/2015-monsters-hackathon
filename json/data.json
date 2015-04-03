@@ -55,64 +55,64 @@
                 "image": "Image URL goes Here"
             },
             "5": {
-                "building": "Building12"
-                "name": "Conference Room 2"
+                "building": "Building12",
+                "name": "Conference Room 2",
                 "lat": 39.89017469346513,
                 "long": -75.1782392152354,
                 "image": "Image URL goes here"
             },
             "6": {
-                "building": "Building12"
-                "name": "Conference Room 3"
-                "lat": 39.89016750169562
-                "long": -75.17805765204409
-                "image": "Image URL goes here"
+                "building": "Building12",
+                "name": "Conference Room 3",
+                "lat": 39.89016750169562,
+                "long": -75.17805765204409,
+                "image": "ImageURLgoeshere"
             },
             "7": {
-                "building": "Building12"
-                "name": "Conference Room 4"
-                "lat": 39.890183887720916
-                "long": -75.17809208250611
-                "image": "Image URL goes here"
+                "building": "Building12",
+                "name": "ConferenceRoom4",
+                "lat": 39.890183887720916,
+                "long": -75.17809208250611,
+                "image": "ImageURLgoeshere"
             },
             "8": {
-                "building": "Building12
-                "name": "East Entrance"
-                "lat": 39.89009205363273
-                "long": -75.1781117202259
-                "image": "Image URL goes here"
+                "building": "Building12",
+                "name": "EastEntrance",
+                "lat": 39.89009205363273,
+                "long": -75.1781117202259,
+                "image": "ImageURLgoeshere"
             },
             "9": {
-                "building": "Building12"
-                "name": "East Kitchen"
-                "lat": 39.8901771603104
-                "long": -75.17811676326286
-                "image": "Image URL goes here"
+                "building": "Building12",
+                "name": "EastKitchen",
+                "lat": 39.8901771603104,
+                "long": -75.17811676326286,
+                "image": "ImageURLgoeshere"
             },
             "10": {
-                "building": "Building12"
-                "name": "East Unisex Bathrooms"
-                "lat": 39.89018662767966
-                "long": -75.17811757637509
-                "image": "Image URL goes here"
+                "building": "Building12",
+                "name": "EastUnisexBathrooms",
+                "lat": 39.89018662767966,
+                "long": -75.17811757637509,
+                "image": "ImageURLgoeshere"
             },
-            "11" {
-                "building": "Buidling12"
-                "name": "West Entrance"
-                "lat": 39.89012325357508
-                "long": -75.17835482542382
-                "image": "Image URL goes here"
+            "11": {
+                "building": "Buidling12",
+                "name": "WestEntrance",
+                "lat": 39.89012325357508,
+                "long": -75.17835482542382,
+                "image": "ImageURLgoeshere"
             },
-            "12" {
-                "building": "Building12"
-                "name": "West Conference Room"
+            "12": {
+                "building": "Building12",
+                "name": "WestConferenceRoom"
             }
         }
     },
     {
-        "name": "Building 543",
-        "description": "Copy Goes Here",
-        "image": "URL Goes here",
+        "name": "Building543",
+        "description": "CopyGoesHere",
+        "image": "URLGoeshere",
         "coordinates": {
             "1": {
                 "building": "Building543",
@@ -146,10 +146,10 @@
         }
     },
     {
-        "name": "Building 3",
+        "name": "Building3",
         "coordinates": {
             "1": {
-                "building": "Building 3",
+                "building": "Building3",
                 "lat": 39.88858169746695,
                 "long": -75.17610141875063
             },
