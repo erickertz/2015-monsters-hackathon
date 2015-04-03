@@ -143,8 +143,8 @@
                 "name": "Patio",
                 "lat": 39.89017837761281,
                 "long": -75.17779135983866,
-                "location-image": "image goes here",
-                "marker-image": "marker image goes here"
+                "location-image": "null",
+                "marker-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/beer.png"
             }
         ]
     },
@@ -189,7 +189,7 @@
         "lat": 39.88945304464071,
         "long": -75.17783248446335,
         "image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/visitorpark.jpg",
-        "marker-image": "marker image goes here",
+        "marker-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/bluecar.png",
         "description": "Visitors can park here. Be careful though, employees can get towed."
     },
     {
