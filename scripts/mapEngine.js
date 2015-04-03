@@ -1,4 +1,5 @@
 var buildingData = [];
+var markerData = [];
 var lastSelectedMenu = -1;
 var monsterMap;
 
@@ -37,18 +38,20 @@ var readMenu = function () {
         contentTitle.append(buildingData[lastSelectedMenu].name);
       });
 
-      readPoints(buildingData[lastSelectedMenu].interior_markers);
+      markerData = buildingData[lastSelectedMenu].interior_markers;
+
+      readPoints();
     }
   });
 }
 
-var readPoints = function (markers) {
+var readPoints = function () {
   var pointsBox = $('.monsters-points');
 
   pointsBox.empty();
 
-  $.each(markers, function(index, element) {
-    pointsBox.append("<li class='monsters-point-bullet'>" + markers[index].name + "</li>");
+  $.each(markerData, function(index, element) {
+    pointsBox.append("<li onclick='' class='monsters-point-bullet'>" + markerData[index].name + "</li>");
   });
 }
 
