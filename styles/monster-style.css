@@ -6,6 +6,16 @@
 	height: 50px;
 }
 
+.col-md-3,
+.col-md-8 {
+	padding: 0;
+}
+
+#monsters-map {
+	height:500px;
+	width:100%
+}
+
 @media (min-width: 768px) {
 	.navbar-nav a {
 		color: #777;
