@@ -2,7 +2,8 @@
     {
         "name": "Building 14",
         "description": "Welcome to B14! Want to learn a little more about this building? Here you will find out IT team. Within IT is our Ecom team, Desktop Support, WM team, and Store Ops.  Need to know your way around? We have listed hot spots in and around this building for your convenience.",
-        "image": "Image URL Goes Here",
+        "image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14front.jpg",
+        "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/building.png",
         "coordinates": [
             {
                 "building": "Building 14",
@@ -31,119 +32,127 @@
                 "name": "Front Door",
                 "lat": 39.88988087405031,
                 "long": -75.1782014904084,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/14flowers.jpg",
-                "marker image": "marker image goes here"
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/14flowers.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/building.png"
             },
             {
                 "building": "Building14",
                 "name": "Large Conference Room",
-                "lat": 39.89005941454101,
-                "long": -75.17860143858178,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/14bigconf.jpg",
-                "marker image": "marker image goes here"
+                "lat": 39.890247,
+                "long": -75.178279,
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/14bigconf.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/pencil.png"
             },
             {
                 "building": "Building14",
                 "name": "Mail Room",
                 "lat": 39.89021283412644,
                 "long": -75.17818974328392,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/14mailroomeast.jpg",
-                "marker image": "marker image goes here"
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/14mailroomeast.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/mailbox.png"
             },
             {
                 "building": "Building14",
                 "name": "Small Conference Room",
-                "lat": 39.8902047630665,
-                "long": -75.17824044616799,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14econfx.jpg",
-                "marker image": "marker image goes here"
+                "lat": 39.890258,
+                "long": -75.17817,
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14econfx.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/pencil.png"
             },
             {
                 "building": "Building14",
                 "name": "Conference Room 2",
-                "lat": 39.89017469346513,
-                "long": -75.1782392152354,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14smallconf3.jpg",
-                "marker image": "marker image goes here"
+                "lat": 39.890264,
+                "long": -75.178101,
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14smallconf3.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/pencil.png"
             },
             {
                 "building": "Building14",
                 "name": "Conference Room 3",
-                "lat": 39.89016750169562,
-                "long": -75.17805765204409,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14smallconf1.jpg",
-                "marker image": "marker image goes here"
+                "lat": 39.890268,
+                "long": -75.1780399,
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14smallconf1.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/pencil.png"
             },
             {
                 "building": "Building14",
                 "name": "Conference Room 4",
-                "lat": 39.890183887720916,
-                "long": -75.17809208250611,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14smallconf2.jpg",
-                "marker image": "marker image goes here"
+                "lat": 39.890271,
+                "long": -75.17798,
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14smallconf2.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/pencil.png"
             },
             {
                 "building": "Building14",
                 "name": "East Entrance",
-                "lat": 39.89009205363273,
-                "long": -75.1781117202259,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/real-east-door.jpg",
-                "marker image": "marker image goes here"
+                "lat": 39.890322,
+                "long": -75.177709,
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/real-east-door.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/building.png"
             },
             {
                 "building": "Building14",
                 "name": "East Kitchen",
-                "lat": 39.8901771603104,
-                "long": -75.17811676326286,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14eastkitchen.jpg",
-                "marker image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/knifeyforkey.png"
+                "lat": 39.890284,
+                "long": -75.177858,
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14eastkitchen.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/knifeyforkey.png"
             },
             {
                 "building": "Building14",
                 "name": "East Unisex Bathrooms",
                 "lat": 39.89018662767966,
                 "long": -75.17811757637509,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14eastbaths.jpg",
-                "marker image": "marker image goes here"
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14eastbaths.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/unisex.png"
             },
             {
                 "building": "Buidling14",
                 "name": "West Entrance",
-                "lat": 39.89012325357508,
-                "long": -75.17835482542382,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14eastdoor.jpg",
-                "marker image": "marker image goes here"
+                "lat": 39.890221,
+                "long": -75.178645,
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14eastdoor.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/building.png"
             },
             {
                 "building": "Building14",
                 "name": "West Conference Room",
-                "lat": 39.89010816192509,
-                "long": -75.17838915594045,
-                "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14wconf.jpg",
-                "marker image": "marker image goes here"
+                "lat": 39.89008,
+                "long": -75.178626,
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14wconf.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/pencil.png"
             },
             {
                 "building": "Building14",
                 "name": "West Kitchen",
-                "lat": 39.89010816192509,
-                "long": -75.17838915594045,
-                "location image": "Image goes here",
-                "marker image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/knifeyforkey.png"
+                "lat": 39.889968,
+                "long": -75.17862,
+                "locationimage": "Image goes here",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/knifeyforkey.png"
+            },
+            {
+                "building": "Building14",
+                "name": "West Unisex Bathrooms",
+                "lat": 39.89001,
+                "long": -75.178622,
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14wbath.png",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/unisex.png"
             },
             {
                 "building": "Building14",
                 "name": "Patio",
                 "lat": 39.89017837761281,
                 "long": -75.17779135983866,
-                "location image": "image goes here",
-                "marker image": "marker image goes here"
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14patio.jpg" ,
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/beer.png"
             }
         ]
     },
     {
         "name": "Building543",
         "description": "Need a bite to eat or a quick coffee? 543 provides a wide variety of lunch options and Jharoka is your go-to for coffee, juices, or smoothies!",
-        "image": "URLGoeshere",
+        "image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/543door.jpg",
         "coordinates": [
             {
                 "building": "Building543",
@@ -169,27 +178,28 @@
         "interior_markers": [
             {
                 "building": "Building543",
-                "name": "door",
+                "name": "Front Door",
                 "lat": 39.888499477589455,
                 "long": -75.17742836406158,
-                "color": "#d2453e"
+                "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/543door.jpg",
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/building.png"
             }
         ]
     },
     {
         "name": "Visitor Parking",
-        "lat": 39.88945304464071,
-        "long": -75.17783248446335,
-        "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/visitorpark.jpg",
-        "marker image": "marker image goes here",
+        "lat": 39.88869342575043,
+        "long": -75.17788468996191,
+        "image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/visitorpark.jpg",
+        "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/bluecar.png",
         "description": "Visitors can park here. Be careful though, employees can get towed."
     },
     {
         "name": "Dog Park",
-        "lat": 39.88869342575043,
-        "long": -75.17788468996191,
-        "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/dogpark.jpg",
-        "marker image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/doggy.png",
+        "lat": 39.888922,
+        "long": -75.178023,
+        "image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/dogpark.jpg",
+        "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/doggy.png",
         "description": "Dogs are welcome to be off leash in the dog park, just not in any of the buildings."
     }
 ]

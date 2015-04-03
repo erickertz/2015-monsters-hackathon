@@ -3,6 +3,9 @@ var markerData = [];
 var drawnMarkers = [];
 var lastSelectedMenu = -1;
 var monsterMap;
+var startLat;
+var startLong;
+
 
 var autoGeolocation = function() {
   navigator.geolocation.getCurrentPosition(geoSuccess, geoError, {maximumAge: 20000, timeout: 10000, enableHighAccuracy: true});
@@ -12,6 +15,8 @@ var autoGeolocation = function() {
 var geoSuccess = function (position) {
   $('#lat').append(position.coords.latitude);
 	$('#lng').append(position.coords.longitude);
+  startLat = 39.8885523;
+  startLong = -75.1763572;
 
   updateMap(39.8885523,-75.1763572);
 }
@@ -51,18 +56,39 @@ var readPoints = function () {
 
   pointsBox.empty();
 
-  $.each(markerData, function(index, element) {
-    pointsBox.append("<li onclick='drawMarker(" + index + ")' class='monsters-point-bullet'>" + markerData[index].name + "</li>");
-  });
+  if(buildingData[lastSelectedMenu].image) {
+    pointsBox.append("<div style='background-image: url(" + buildingData[lastSelectedMenu].image + ")' class='monsters-building-image'></div>");
+  }
+
+  pointsBox.append("<div class='monsters-description'>" + buildingData[lastSelectedMenu].description + "</div>");
+
+  if(markerData) {
+    $.each(markerData, function(index, element) {
+      pointsBox.append("<li onclick='drawMarker(" + index + ")' class='monsters-point-bullet'>" + markerData[index].name + "</li>");
+    });
+  } else {
+    drawMarker(null, buildingData[lastSelectedMenu]);
+  }
+
+
 }
 
-var drawMarker = function(index) {
+var drawMarker = function(markerDataIndex, buildingData) {
+
+  var currentData = null;
+
+  console.log(markerDataIndex, buildingData);
+
+  if(markerDataIndex !== null) {
+    currentData = markerData[markerDataIndex];
+  } else if(buildingData) {
+    currentData = buildingData;
+  }
+
   //Reset current markers
   $.each(drawnMarkers, function(index, element) {
     drawnMarkers[index].setMap(null);
   })
-
-  var currentData = markerData[index];
 
   var currentPositionMarker = new google.maps.Marker({
       map: monsterMap,
@@ -71,7 +97,8 @@ var drawMarker = function(index) {
           currentData.lat,
           currentData.long
       ),
-      title: currentData.name
+      title: currentData.name,
+      icon: currentData.markerimage
   });
 
   setTimeout(function() {
@@ -80,8 +107,19 @@ var drawMarker = function(index) {
 
   drawnMarkers.push(currentPositionMarker);
 
+  var infoContent = currentData.locationimage ? "<b>" + currentData.name + "</b>" +
+              "<div class='monsters-info-image' style='background-image: url(" + currentData.locationimage + ")'></div>" :
+              currentData.description ? 
+              "<b>" + currentData.name + "</b>" + 
+              "<div class='monsters-info-description'>" + currentData.description + "</div>" : 
+              "<b>" + currentData.name + "</b>";
+
+
+
+  infoContent = infoContent + "<div class='monsters-directions'><a target='_blank' href='http://maps.google.com/maps?saddr=" + startLat + "," + startLong + "&daddr=" + currentData.lat + "," + currentData.long + "'>Get Directions</a></div>"
+
   var infowindow = new google.maps.InfoWindow({
-    content: "<b>" + currentData.name + "</b>"
+    content: infoContent
   });
 
   google.maps.event.addListener(currentPositionMarker, 'click', function() {
@@ -101,6 +139,7 @@ var loadBuildingDetails = function(buildingId) {
   contentTitle.empty();
   contentTitle.append(buildingData[buildingId].name);
   localStorage.setItem("URBN-Building", buildingId);
+  lastSelectedMenu = buildingId;
 
   markerData = buildingData[buildingId].interior_markers;
 
@@ -134,8 +173,6 @@ var updateMap = function(lat, lng) {
       title: "You are here!",
       icon: "/app/images/locator-marker.png"
   });
-
-  infowindow.open(monsterMap,currentPositionMarker);
 
   google.maps.event.addListener(currentPositionMarker, 'click', function() {
     infowindow.open(monsterMap,currentPositionMarker);

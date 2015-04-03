@@ -55,3 +55,26 @@
 .monsters-marker-title {
 	font-weight: bold;
 }
+
+.monsters-building-image,
+.monsters-info-image {
+	width: 100%;
+	height: 250px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 35%;
+	margin-bottom: 10px;
+}
+
+.monsters-description {
+	margin: 10px 0;
+}
+
+.monsters-info-description {
+	width: 200px;
+}
+
+.monsters-info-image{
+	width: 200px;
+	height: 200px;
+}
