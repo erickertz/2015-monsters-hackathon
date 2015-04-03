@@ -51,6 +51,8 @@ var readPoints = function () {
 
   pointsBox.empty();
 
+  pointsBox.append("<div style='background-image: url(" + buildingData[lastSelectedMenu].image + ")' class='monsters-building-image'></div>");
+
   $.each(markerData, function(index, element) {
     pointsBox.append("<li onclick='drawMarker(" + index + ")' class='monsters-point-bullet'>" + markerData[index].name + "</li>");
   });
