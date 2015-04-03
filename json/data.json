@@ -96,7 +96,7 @@
                 "lat": 39.8901771603104,
                 "long": -75.17811676326286,
                 "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14eastkitchen.jpg",
-                "marker image": "marker image goes here"
+                "marker image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/knifeyforkey.png"
             },
             {
                 "building": "Building14",
@@ -128,7 +128,7 @@
                 "lat": 39.89010816192509,
                 "long": -75.17838915594045,
                 "location image": "Image goes here",
-                "marker image": "Marker image goes here"
+                "marker image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/knifeyforkey.png"
             },
             {
                 "building": "Building14",
@@ -189,7 +189,7 @@
         "lat": 39.88869342575043,
         "long": -75.17788468996191,
         "location image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/dogpark.jpg",
-        "marker image": "Marker Image goes here",
+        "marker image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/doggy.png",
         "description": "Dogs are welcome to be off leash in the dog park, just not in any of the buildings."
     }
 ]
