@@ -128,7 +128,7 @@
                 "name": "West Kitchen",
                 "lat": 39.889968,
                 "long": -75.17862,
-                "locationimage": "Image goes here",
+                "locationimage": null,
                 "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/knifeyforkey.png"
             },
             {
