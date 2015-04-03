@@ -1,0 +1,57 @@
+.navbar-brand {
+	padding: 0;
+}
+
+.app-logo {
+	height: 50px;
+}
+
+.col-md-3,
+.col-md-8 {
+	padding: 0;
+}
+
+#monsters-map {
+	height:500px;
+	width:100%
+}
+
+@media (min-width: 768px) {
+	.navbar-nav a {
+		color: #777;
+		border-left: 1px solid #aaa;
+		border-right: 1px solid #aaa;
+	}
+}
+
+.monsters-tagline {
+    padding: 5px 15px 0 15px;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.monsters-bodywrap {
+	margin: 20px;
+}
+
+.monster-main-menu li {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.monster-main-menu li:hover {
+	background-color: #aaa;
+	color: #fff;
+}
+
+.monsters-point-bullet {
+	margin-bottom: 10px;
+	color: #0066FF;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.monsters-marker-title {
+	font-weight: bold;
+}
