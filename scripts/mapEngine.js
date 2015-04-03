@@ -74,10 +74,15 @@ var readPoints = function () {
 }
 
 var drawMarker = function(markerDataIndex, buildingData) {
+  var mapTitle = document.getElementById("monsters-map-title");
+
+  var topPosition = mapTitle.getBoundingClientRect().top;
+
+  if(topPosition > 140) {
+    document.getElementById("monsters-map-title").scrollIntoView();
+  }
 
   var currentData = null;
-
-  console.log(markerDataIndex, buildingData);
 
   if(markerDataIndex !== null) {
     currentData = markerData[markerDataIndex];
