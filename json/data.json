@@ -2,7 +2,7 @@
     {
         "name": "Building 14",
         "description": "Welcome to B14! Want to learn a little more about this building? Here you will find out IT team. Within IT is our Ecom team, Desktop Support, WM team, and Store Ops.  Need to know your way around? We have listed hot spots in and around this building for your convenience.",
-        "image": "null",
+        "image": mull,
         "marker-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/building.png",
         "coordinates": [
             {
@@ -144,7 +144,7 @@
                 "name": "Patio",
                 "lat": 39.89017837761281,
                 "long": -75.17779135983866,
-                "location-image": "null",
+                "location-image": null,
                 "marker-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/beer.png"
             }
         ]
