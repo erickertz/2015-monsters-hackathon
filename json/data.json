@@ -177,10 +177,11 @@
         "interior_markers": [
             {
                 "building": "Building543",
-                "name": "door",
+                "name": "Front Door",
                 "lat": 39.888499477589455,
                 "long": -75.17742836406158,
-                "color": "#d2453e"
+                "location-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/543door.jpg",
+                "marker-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/building.png"
             }
         ]
     },
