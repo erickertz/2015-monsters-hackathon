@@ -2,7 +2,7 @@
     {
         "name": "Building 14",
         "description": "Welcome to B14! Want to learn a little more about this building? Here you will find out IT team. Within IT is our Ecom team, Desktop Support, WM team, and Store Ops.  Need to know your way around? We have listed hot spots in and around this building for your convenience.",
-        "image": null,
+        "image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14front.jpg",
         "marker-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/building.png",
         "coordinates": [
             {
@@ -144,7 +144,7 @@
                 "name": "Patio",
                 "lat": 39.89017837761281,
                 "long": -75.17779135983866,
-                "location-image": null,
+                "location-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/b14patio.jpg" ,
                 "marker-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/beer.png"
             }
         ]
@@ -188,16 +188,16 @@
     },
     {
         "name": "Visitor Parking",
-        "lat": 39.88945304464071,
-        "long": -75.17783248446335,
+        "lat": 39.88869342575043,
+        "long": -75.17788468996191,
         "image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/visitorpark.jpg",
         "marker-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/bluecar.png",
         "description": "Visitors can park here. Be careful though, employees can get towed."
     },
     {
         "name": "Dog Park",
-        "lat": 39.88869342575043,
-        "long": -75.17788468996191,
+        "lat": 39.888922,
+        "long": -75.178023,
         "image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/dogpark.jpg",
         "marker-image": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/doggy.png",
         "description": "Dogs are welcome to be off leash in the dog park, just not in any of the buildings."
