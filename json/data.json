@@ -49,7 +49,7 @@
                 "lat": 39.89021283412644,
                 "long": -75.17818974328392,
                 "locationimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/14mailroomeast.jpg",
-                "markerimage": "marker image goes here"
+                "markerimage": "https://s3.amazonaws.com/com.urbn.hackathon.monsters/images/mailbox.png"
             },
             {
                 "building": "Building14",
