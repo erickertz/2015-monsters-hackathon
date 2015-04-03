@@ -1,28 +1,90 @@
 [
-	{
-		"name": "Building 3",
-		"coordinates": {
-			"1": {"building": "Building 3", lat": 39.88858169746695,"long": -75.17610141875063},
-			"2": {"building": "Building 3", "lat": 9.88847393342397,"long": -75.17602270053374},
-			"3": {"building": "Building 3", "lat": 39.88800610612435,"long": -75.17607809475118},
-			"4": {"building": "Building 3", "lat": 39.88792312341063,"long": -75.17603050904934}
-		},
-		"interior_markers": {
-			"1": {"building": "Building 3", "name": "men's bathroom", "lat": 39.8880150452557,"long": -75.17601561895749, "color": "#d1ff26"},
-			"2": {"building": "Building 3", "name": "womens's bathroom", "lat": 39.888163710359116,"long": -75.1760004626332, "color": "#d1ff26"},			"3": {"name": "door", "lat": 39.88813706040256,"long": -75.17605463458966, "color": "#d2453e"},
-			"4": {"building": "Building 3", "name": "door", "lat": 39.88858169746695,"long": -75.17610141875063, "color": "#d2453e"}
-		}
-	},
-	{
-		"name": "Building 543",
-		"coordinates": {
-			"1": {"building": "Building 543", "lat": 39.88837840752733,"long": -75.17743381489464},
-			"2": {"building": "Building 543", "lat": 39.88793946693887,"long": -75.17791042247472},
-			"3": {"building": "Building 543", "lat": 39.88762910716228,"long": -75.17809831174473},
-			"4": {"building": "Building 543", "lat": 39.8885808204989,"long": -75.17827405157702}
-		},
-		"interior_markers": {
-			"1": {"building": "Building 543", "name": "door", "lat": 39.888499477589455,"long": -75.17742836406158, "color": "#d2453e"}
-		}
-	}
+    {
+        "name": "Building 3",
+        "coordinates": {
+            "1": {
+                "building": "Building 3",
+                "lat": 39.88858169746695,
+                "long": -75.17610141875063
+            },
+            "2": {
+                "building": "Building3",
+                "lat": 9.88847393342397,
+                "long": -75.17602270053374
+            },
+            "3": {
+                "building": "Building3",
+                "lat": 39.88800610612435,
+                "long": -75.17607809475118
+            },
+            "4": {
+                "building": "Building3",
+                "lat": 39.88792312341063,
+                "long": -75.17603050904934
+            }
+        },
+        "interior_markers": {
+            "1": {
+                "building": "Building3",
+                "name": "men'sbathroom",
+                "lat": 39.8880150452557,
+                "long": -75.17601561895749,
+                "color": "#d1ff26"
+            },
+            "2": {
+                "building": "Building3",
+                "name": "womens'sbathroom",
+                "lat": 39.888163710359116,
+                "long": -75.1760004626332,
+                "color": "#d1ff26"
+            },
+            "3": {
+                "name": "door",
+                "lat": 39.88813706040256,
+                "long": -75.17605463458966,
+                "color": "#d2453e"
+            },
+            "4": {
+                "building": "Building3",
+                "name": "door",
+                "lat": 39.88858169746695,
+                "long": -75.17610141875063,
+                "color": "#d2453e"
+            }
+        }
+    },
+    {
+        "name": "Building543",
+        "coordinates": {
+            "1": {
+                "building": "Building543",
+                "lat": 39.88837840752733,
+                "long": -75.17743381489464
+            },
+            "2": {
+                "building": "Building543",
+                "lat": 39.88793946693887,
+                "long": -75.17791042247472
+            },
+            "3": {
+                "building": "Building543",
+                "lat": 39.88762910716228,
+                "long": -75.17809831174473
+            },
+            "4": {
+                "building": "Building543",
+                "lat": 39.8885808204989,
+                "long": -75.17827405157702
+            }
+        },
+        "interior_markers": {
+            "1": {
+                "building": "Building543",
+                "name": "door",
+                "lat": 39.888499477589455,
+                "long": -75.17742836406158,
+                "color": "#d2453e"
+            }
+        }
+    }
 ]
