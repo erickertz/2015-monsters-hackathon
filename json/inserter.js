@@ -2,20 +2,25 @@ var authorization = "Basic bmVvNGo6bW9uc3RlcnM=";
 
 $.parseData = function parseData(data) {
 	$.each(data, function(key, value) {
-		//console.log(value);
+		console.log(value);
 		$.addBuilding(value);
-		$.addCoordinates(value.coordinates);
-		$.addInteriorMarkers(value.interior_markers);
+		if(typeof(value.coordinates) != "undefined"){
+			$.addCoordinates(value.coordinates);
+		}
+		if(typeof(value.interior_markers) != "undefined"){
+			$.addInteriorMarkers(value.interior_markers);
+		}
 	});
 }
 
 $.addBuilding = function addBuilding(building) {
+	console.log(building.name);
 	var name = building.name;
 	var description = building.description;
 	var image = building.image;
 	var markerimage = building.markerimage;
-	var lat = lat;
-	var long = long;
+	var lat = building.lat;
+	var long = building.long;
 	var url = "http://localhost:7474/db/data/transaction/commit";
 	var data = {"statements":[{"statement":"CREATE (b:Building { name: '"+name+"', description: '"+description+"', image: '"+image+"', markerimage: '"+markerimage+"', lat: '"+lat+"', long: '"+long+"'})"}]};
 	$.ajax({
