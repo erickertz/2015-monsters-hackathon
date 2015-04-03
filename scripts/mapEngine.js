@@ -11,7 +11,7 @@ var geoSuccess = function (position) {
   $('#lat').append(position.coords.latitude);
 	$('#lng').append(position.coords.longitude);
 
-  updateMap(position.coords.latitude, position.coords.longitude);
+  updateMap(39.8885523,-75.1763572);
 }
 
 var geoError = function (position) {
@@ -36,7 +36,19 @@ var readMenu = function () {
         contentTitle.empty();
         contentTitle.append(buildingData[lastSelectedMenu].name);
       });
+
+      readPoints(buildingData[lastSelectedMenu].interior_markers);
     }
+  });
+}
+
+var readPoints = function (markers) {
+  var pointsBox = $('.monsters-points');
+
+  pointsBox.empty();
+
+  $.each(markers, function(index, element) {
+    pointsBox.append("<li class='monsters-point-bullet'>" + markers[index].name + "</li>");
   });
 }
 
@@ -46,6 +58,8 @@ var loadBuildingDetails = function(buildingId) {
   contentTitle.empty();
   contentTitle.append(buildingData[buildingId].name);
   localStorage.setItem("URBN-Building", buildingId);
+
+  readPoints(buildingData[buildingId].interior_markers);
 }
 
 $(document).ready(function() {

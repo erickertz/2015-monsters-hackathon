@@ -44,3 +44,10 @@
 	background-color: #aaa;
 	color: #fff;
 }
+
+.monsters-point-bullet {
+	margin-bottom: 10px;
+	color: #0066FF;
+	cursor: pointer;
+	font-size: 14px;
+}

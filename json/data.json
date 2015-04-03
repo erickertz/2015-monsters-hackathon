@@ -23,35 +23,35 @@
                 "long": -75.17603050904934
             }
         },
-        "interior_markers": {
-            "1": {
+        "interior_markers": [
+            {
                 "building": "Building3",
                 "name": "men'sbathroom",
                 "lat": 39.8880150452557,
                 "long": -75.17601561895749,
                 "color": "#d1ff26"
             },
-            "2": {
+            {
                 "building": "Building3",
                 "name": "womens'sbathroom",
                 "lat": 39.888163710359116,
                 "long": -75.1760004626332,
                 "color": "#d1ff26"
             },
-            "3": {
+            {
                 "name": "door",
                 "lat": 39.88813706040256,
                 "long": -75.17605463458966,
                 "color": "#d2453e"
             },
-            "4": {
+            {
                 "building": "Building3",
                 "name": "door",
                 "lat": 39.88858169746695,
                 "long": -75.17610141875063,
                 "color": "#d2453e"
             }
-        }
+           ]
     },
     {
         "name": "Building543",
@@ -77,14 +77,14 @@
                 "long": -75.17827405157702
             }
         },
-        "interior_markers": {
-            "1": {
+        "interior_markers": [
+            {
                 "building": "Building543",
                 "name": "door",
                 "lat": 39.888499477589455,
                 "long": -75.17742836406158,
                 "color": "#d2453e"
             }
-        }
+        ]
     }
 ]
