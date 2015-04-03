@@ -51,21 +51,38 @@ var readPoints = function () {
 
   pointsBox.empty();
 
-  pointsBox.append("<div style='background-image: url(" + buildingData[lastSelectedMenu].image + ")' class='monsters-building-image'></div>");
+  if(buildingData[lastSelectedMenu].image) {
+    pointsBox.append("<div style='background-image: url(" + buildingData[lastSelectedMenu].image + ")' class='monsters-building-image'></div>");
+  }
 
-  $.each(markerData, function(index, element) {
-    pointsBox.append("<li onclick='drawMarker(" + index + ")' class='monsters-point-bullet'>" + markerData[index].name + "</li>");
-  });
+  pointsBox.append("<div class='monsters-description'>" + buildingData[lastSelectedMenu].description + "</div>");
+
+  if(markerData) {
+    $.each(markerData, function(index, element) {
+      pointsBox.append("<li onclick='drawMarker(" + index + ")' class='monsters-point-bullet'>" + markerData[index].name + "</li>");
+    });
+  } else {
+    drawMarker(null, buildingData[lastSelectedMenu]);
+  }
+
+
 }
 
-var drawMarker = function(index) {
+var drawMarker = function(markerDataIndex, buildingData) {
+
+  var currentData = null;
+
+  if(markerDataIndex) {
+    currentData = markerData[markerDataIndex];
+  } else if(buildingData) {
+    currentData = buildingData;
+  }
+
   //Reset current markers
   $.each(drawnMarkers, function(index, element) {
     drawnMarkers[index].setMap(null);
   })
-
-  var currentData = markerData[index];
-
+  console.log(currentData);
   var currentPositionMarker = new google.maps.Marker({
       map: monsterMap,
       animation: google.maps.Animation.BOUNCE,
@@ -73,7 +90,8 @@ var drawMarker = function(index) {
           currentData.lat,
           currentData.long
       ),
-      title: currentData.name
+      title: currentData.name,
+      icon: currentData.markerimage
   });
 
   setTimeout(function() {
@@ -103,6 +121,7 @@ var loadBuildingDetails = function(buildingId) {
   contentTitle.empty();
   contentTitle.append(buildingData[buildingId].name);
   localStorage.setItem("URBN-Building", buildingId);
+  lastSelectedMenu = buildingId;
 
   markerData = buildingData[buildingId].interior_markers;
 
