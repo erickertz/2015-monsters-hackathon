@@ -1,5 +1,6 @@
 var buildingData = [];
 var markerData = [];
+var drawnMarkers = [];
 var lastSelectedMenu = -1;
 var monsterMap;
 
@@ -51,8 +52,47 @@ var readPoints = function () {
   pointsBox.empty();
 
   $.each(markerData, function(index, element) {
-    pointsBox.append("<li onclick='' class='monsters-point-bullet'>" + markerData[index].name + "</li>");
+    pointsBox.append("<li onclick='drawMarker(" + index + ")' class='monsters-point-bullet'>" + markerData[index].name + "</li>");
   });
+}
+
+var drawMarker = function(index) {
+  //Reset current markers
+  $.each(drawnMarkers, function(index, element) {
+    drawnMarkers[index].setMap(null);
+  })
+
+  var currentData = markerData[index];
+
+  var currentPositionMarker = new google.maps.Marker({
+      map: monsterMap,
+      animation: google.maps.Animation.BOUNCE,
+      position: new google.maps.LatLng(
+          currentData.lat,
+          currentData.long
+      ),
+      title: currentData.name
+  });
+
+  setTimeout(function() {
+    currentPositionMarker.setAnimation(null);
+  },3000);
+
+  drawnMarkers.push(currentPositionMarker);
+
+  var infowindow = new google.maps.InfoWindow({
+    content: "<b>" + currentData.name + "</b>"
+  });
+
+  google.maps.event.addListener(currentPositionMarker, 'click', function() {
+    infowindow.open(monsterMap,currentPositionMarker);
+    currentPositionMarker.setAnimation(null);
+  });
+
+  monsterMap.panTo(new google.maps.LatLng(
+                        currentData.lat,
+                        currentData.long
+                    ));
 }
 
 var loadBuildingDetails = function(buildingId) {
@@ -62,7 +102,9 @@ var loadBuildingDetails = function(buildingId) {
   contentTitle.append(buildingData[buildingId].name);
   localStorage.setItem("URBN-Building", buildingId);
 
-  readPoints(buildingData[buildingId].interior_markers);
+  markerData = buildingData[buildingId].interior_markers;
+
+  readPoints();
 }
 
 $(document).ready(function() {
@@ -80,7 +122,7 @@ $(document).ready(function() {
 var updateMap = function(lat, lng) {
 
   var infowindow = new google.maps.InfoWindow({
-    content: "You are here!"
+    content: "<div class='monsters-marker-title'>You are here!</div>"
   });
 
   var currentPositionMarker = new google.maps.Marker({
@@ -89,8 +131,11 @@ var updateMap = function(lat, lng) {
           lat,
           lng
       ),
-      title: "Current Position"
+      title: "You are here!",
+      icon: "/app/images/locator-marker.png"
   });
+
+  infowindow.open(monsterMap,currentPositionMarker);
 
   google.maps.event.addListener(currentPositionMarker, 'click', function() {
     infowindow.open(monsterMap,currentPositionMarker);
